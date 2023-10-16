@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hospital_nuevo"
+    tools:context=".Principal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/menubtn"
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:background="@drawable/menu_principal"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="Imagen de perfil"
+            android:src="@drawable/perfil_user"
+            android:layout_marginStart="280dp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/welcomeTitle"
+        android:layout_width="280dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="68dp"
+        android:text="Bienvenido/a Señor/a"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.404"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/registerMedicineButton"
+        android:layout_width="236dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="284dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Registrar Medicamento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/iconRegisterMedicine"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:backgroundTint="#3F51B5"
+        app:layout_constraintBottom_toBottomOf="@id/registerMedicineButton"
+        app:layout_constraintEnd_toEndOf="@id/registerMedicineButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/registerMedicineButton"
+        app:layout_constraintTop_toTopOf="@id/registerMedicineButton"
+        app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+
+    <Button
+        android:id="@+id/viewRecordButton"
+        android:layout_width="227dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="12dp"
+        android:text="Ver Registro"
+        android:backgroundTint="#3F51B5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerMedicineButton" />
+
+    <ImageButton
+        android:id="@+id/iconViewRecord"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:srcCompat="@android:drawable/ic_menu_info_details"
+        app:backgroundTint="#3F51B5"
+        app:layout_constraintEnd_toEndOf="@id/viewRecordButton"
+        app:layout_constraintTop_toTopOf="@id/viewRecordButton"
+        app:layout_constraintBottom_toBottomOf="@id/viewRecordButton"
+        app:layout_constraintStart_toEndOf="@id/viewRecordButton"
+        />
+
+    <Button
+        android:id="@+id/nextAppointmentButton"
+        android:layout_width="239dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="16dp"
+        android:text="Próxima Cita"
+        android:backgroundTint="#3F51B5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewRecordButton" />
+
+    <ImageButton
+        android:id="@+id/iconNextAppointment"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:srcCompat="@android:drawable/ic_menu_info_details"
+        app:backgroundTint="#3F51B5"
+        app:layout_constraintEnd_toEndOf="@id/nextAppointmentButton"
+        app:layout_constraintTop_toTopOf="@id/nextAppointmentButton"
+        app:layout_constraintBottom_toBottomOf="@id/nextAppointmentButton"
+        app:layout_constraintStart_toEndOf="@id/nextAppointmentButton"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

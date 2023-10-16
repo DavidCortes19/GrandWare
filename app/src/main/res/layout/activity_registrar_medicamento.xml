@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hospital_nuevo"
+    tools:context=".RegistrarMedicamento">
+
+
+    <TextView
+        android:id="@+id/medicamentosTitle"
+        android:layout_width="226dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:text="Medicamentos"
+        android:textColor="#06156C"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/medicationNameEditText"
+        android:layout_width="376dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="172dp"
+        android:background="#80FFFFFF"
+        android:hint="Nombre del Medicamento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/medicationDescriptionEditText"
+        android:layout_width="377dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="48dp"
+        android:background="#80FFFFFF"
+        android:hint="Descripción del Medicamento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/medicationNameEditText" />
+
+    <Button
+        android:id="@+id/saveMedicationButton"
+        android:layout_width="148dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="68dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Guardar"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/medicationDescriptionEditText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

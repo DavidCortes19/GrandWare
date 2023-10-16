@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_uno"
+        android:title="Perfil"
+        android:icon="@drawable/baseline_build_24"/>
+    <item
+        android:id="@+id/menu_dos"
+        android:title="Medicamentos"
+        android:icon="@drawable/baseline_build_24"/>
+    <item
+        android:id="@+id/menu_configuracion"
+        android:title="Configuración"
+        android:icon="@drawable/baseline_build_24"
+        />
+    <item
+        android:id="@+id/menu_ayuda"
+        android:icon="@drawable/baseline_build_24"
+        android:title="Ayuda"
+        />
+    <item
+        android:id="@+id/menu_doctor"
+        android:icon="@drawable/baseline_build_24"
+        android:title="Doctor"
+        />
+</menu>
+
+
